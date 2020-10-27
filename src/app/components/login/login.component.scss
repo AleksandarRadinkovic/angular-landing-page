@@ -1,0 +1,79 @@
+.container {
+    width: 100%;
+    background-color: #22315b;
+    padding: 30px;
+    box-sizing: border-box;
+    .content-holder {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .login-image {
+        width: 50%;
+        max-width: 480px;
+    }
+    .login-image img{
+        width: 100%;
+    }
+    .login-form {
+        width: 50%;
+        max-width: 400px;
+        color: #ffffff;
+    }
+    .button-holder{
+        width: 100%;
+    }
+    .button-holder button:nth-child(1) {
+        background-color:#dd5757;
+        color: #ffffff;
+        font-size: 18px;
+        border: 1px solid #dd5757;
+        border-radius: 8px;
+        width: 50%;
+        max-width: 150px;
+        padding: 13px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .button-holder button:nth-child(1):hover {
+        background-color: transparent;
+        border: 1px solid #dd5757;
+    }
+    .button-holder button:nth-child(2) {
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 17px;
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        width: 50%;
+        max-width: 150px;
+        padding: 13px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .button-holder button:nth-child(2):hover {
+        border: 1px solid #dd5757;
+    }
+    @media only screen and (max-width: 861px) {
+        .content-holder {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .login-form {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .login-image {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .button-holder button {
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+
