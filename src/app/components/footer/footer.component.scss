@@ -1,89 +1,78 @@
 @import "/src/scss/variables.scss";
 .container {
-	width: 100%;
 	background-color: $gray-color;
-	margin-top: 40px;
-	padding-bottom: 30px;
 	.content {
-		justify-content: space-between;
+		flex-direction: column;
 		margin: 0 auto;
-		padding-top: 30px;
-		.footer1 {
-			width: 33%;
-			max-width: 500px;
-			background-image: url(/assets/images/logo2.png);
-			background-repeat: no-repeat;
-			background-position: 1px 13px;
-			background-size: 80px;
-			p {
-				margin-top: 60px;
-				font-size: 14px;
-			}
-			.icon-holder {
-				display: flex;
-				justify-content: flex-start;
-				margin-top: 30px;
-				i {
-					margin-right: 25px;
-					font-size: 18px;
+		padding-bottom: 30px;
+		.footer1{
+			.items {
+				width: 100%;
+				justify-content: space-between;
+				color: $dark-purple;;
+				.item1 {
+					flex-direction: column;
+					background-image: url(/assets/images/logo2.png);
+					background-repeat: no-repeat;
+					background-size: 100px;
+					background-position: 10px;
+					background-position: 1px 30px;
+					p {
+						margin-top: 100px;
+						font-size: 14px;
+					}
+					.social-icons {
+						margin-top: 20px;
+						i {
+							margin-right: 22px;
+							font-size: 120x;
+						}
+					}
 				}
-			}
-		}
-		.footer3-items {
-			display: flex;
-			p {
-				margin-right: 10px;
-				font-size: 12px;
+				.item2 {
+					flex-direction: column;
+					p {
+						font-size: 14px;
+					}
+				}
+				.item3 {
+					flex-direction: column;
+					p {
+						font-size: 14px;
+					}
+				}
 			}
 		}
 		.footer2 {
-			h4 {
-				font-size: 16px;
-			}
+			margin-top: 30px;
+			font-size: 11px;
 			p {
-				margin-bottom: 16px;
-				font-size: 14px;
+				margin-right: 20px;
 			}
 		}
-		.footer3 {
-			h4 {
-				font-size: 18px;
-			}
-			p {
-				font-size: 14px;
-				margin-bottom: 16px;
-			}
-		}
-	}
-	@media only screen and (max-width: 861px) {
-		.content {
-			width: 90%;
-			margin: 0 auto;
-			display: block;
-			.footer1,
-			.footer2,
-			.footer3 {
-				width: 70%;
-				margin: 0 auto;
-			}
+		@media only screen and (max-width: 900px){
 			.footer1 {
-				padding-top: 40px;
-				max-width: 90%;
-				.icon-holder {
-					margin-bottom: 25px;
+				.items {
+					flex-direction: column;
+					.item2 {
+						h6 {
+							margin-bottom: 10px;
+						}
+						p {
+							margin-bottom: 5px;
+						}
+					}
+					.item3 {
+						h6 {
+							margin-bottom: 10px;
+						}
+						p {
+							margin-bottom: 5px;
+						}
+					}
 				}
-				p {
-					padding-top: 10px;
-					margin-top: 10px;
-					margin-bottom: 25px;
-				}
-			}
-			.show {
-				display: none;
-			}
-			.footer3-items-mobile {
-				display: block;
 			}
 		}
+
 	}
 }
