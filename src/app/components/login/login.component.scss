@@ -1,79 +1,74 @@
+@import "/src/scss/variables.scss";
 .container {
-    width: 100%;
-    background-color: #22315b;
-    padding: 30px;
-    box-sizing: border-box;
-    .content-holder {
-        display: flex;
+    background-color: $blue-background;
+    .content {
         justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
         align-items: center;
-    }
-    .login-image {
-        width: 50%;
-        max-width: 480px;
-    }
-    .login-image img{
-        width: 100%;
-    }
-    .login-form {
-        width: 50%;
-        max-width: 400px;
-        color: #ffffff;
-    }
-    .button-holder{
-        width: 100%;
-    }
-    .button-holder button:nth-child(1) {
-        background-color:#dd5757;
-        color: #ffffff;
-        font-size: 18px;
-        border: 1px solid #dd5757;
-        border-radius: 8px;
-        width: 50%;
-        max-width: 150px;
-        padding: 13px;
-        margin-right: 5px;
-        cursor: pointer;
-    }
-    .button-holder button:nth-child(1):hover {
-        background-color: transparent;
-        border: 1px solid #dd5757;
-    }
-    .button-holder button:nth-child(2) {
-        background-color: transparent;
-        color: #ffffff;
-        font-size: 17px;
-        border: 1px solid #ffffff;
-        border-radius: 8px;
-        width: 50%;
-        max-width: 150px;
-        padding: 13px;
-        margin-right: 5px;
-        cursor: pointer;
-    }
-    .button-holder button:nth-child(2):hover {
-        border: 1px solid #dd5757;
-    }
-    @media only screen and (max-width: 861px) {
-        .content-holder {
-            display: block;
-            width: 90%;
-            margin: 0 auto;
+        margin: 0 auto;
+        .img-holder {
+            width: 50%;
+            img {
+                width: 100%;
+                max-width: 500px;
+            }
         }
-        .login-form {
-            width: 90%;
-            margin: 0 auto;
-            text-align: center;
+        .login-holder {
+            width: 50%;
+            .login-text{
+                color: $text-white;
+                margin-bottom: 30px;
+                h4 {
+                    font-weight: normal;
+                }
+            }
+            .button-holder {
+                button {
+                    margin: 0 auto;
+                    margin-right: 15px;
+                    width: 90%;
+                    width: 140px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    color: $text-white;
+                }
+                .red {
+                    color: $text-white;
+                    background-color: $red-color;
+                    border: 1px solid $red-color;
+                }
+                .transparent {
+                    background-color: transparent;
+                    border: 1px solid $text-white;
+                    
+                }
+            }
+
         }
-        .login-image {
-            width: 90%;
-            margin: 0 auto;
-        }
-        .button-holder button {
-            margin-bottom: 10px;
+        @media only screen and (max-width: 1150px) {
+            flex-direction: column-reverse;
+            .login-holder {
+                margin: 0 auto;
+                margin-bottom: 40px;
+                width: 90%;
+                max-width: 500px;
+                text-align: center;
+                .button-holder {
+                    .transparent {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .img-holder {
+                width: 90%;
+                text-align: center;
+                img {
+                    max-width: 400px;
+                }
+            }
         }
     }
-    
 }
-
-

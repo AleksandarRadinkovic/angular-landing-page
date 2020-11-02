@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener  } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  public screenWidth: any;
 
-  ngOnInit(): void {
+  ngOnInit():void {
+      this.screenWidth = window.innerWidth;
   }
+  @HostListener('window:resize', ['$event'])
+
+  onResize(event) {
+    this.screenWidth = window.innerWidth;
+  }
+
 
 }

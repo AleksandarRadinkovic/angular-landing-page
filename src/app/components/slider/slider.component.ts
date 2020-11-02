@@ -11,7 +11,7 @@ export class SliderComponent implements OnInit {
   slideData = [
     {
       image:"assets/images/slider1.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
@@ -25,14 +25,14 @@ export class SliderComponent implements OnInit {
     },
     {
       image:"assets/images/slider3.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
     },
     {
       image:"assets/images/slider1.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
@@ -46,14 +46,14 @@ export class SliderComponent implements OnInit {
     },
     {
       image:"assets/images/slider3.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
     },
     {
       image:"assets/images/slider1.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
@@ -67,14 +67,14 @@ export class SliderComponent implements OnInit {
     },
     {
       image:"assets/images/slider3.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
     },
     {
       image:"assets/images/slider1.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
@@ -88,7 +88,7 @@ export class SliderComponent implements OnInit {
     },
     {
       image:"assets/images/slider3.jpg",
-      name: "Almost New sofa",
+      name: "Almost New ",
       owner: "John S",
       description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
       price: "$300"
@@ -96,7 +96,7 @@ export class SliderComponent implements OnInit {
   ]
 
   config: SwiperOptions = {
-    autoHeight: true,
+    autoHeight: false,
     allowTouchMove: true,
     breakpoints: {
       1024: {

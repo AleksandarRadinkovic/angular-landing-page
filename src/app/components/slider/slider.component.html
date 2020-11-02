@@ -1,22 +1,22 @@
 <div class="container">
 
     <div class="title-holder">
-        <h1>Featured Items</h1>
+        <h2>Featured Items</h2>
     </div>
     
-    <swiper [config]="config">
+    <swiper class="w90 sliders" [config]="config">
 
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let slide of slideData">
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide " *ngFor="let slide of slideData">
                 <div class="slider-item">
                     <div class="img-slider-holder">
                         <img [src]="slide.image" />
                     </div>
                     <div class="slider-info">
-                        <h4>{{slide.name}}</h4>
-                        <h4>{{slide.owner}}</h4>
-                        <p>{{slide.description}}</p>
-                        <h3>{{slide.price}}</h3>
+                        <h6>{{slide.name}}</h6>
+                        <h6>{{slide.owner}}</h6>
+                        <p class="dscr">{{slide.description}}</p>
+                        <h3 class="price">{{slide.price}}</h3>
                     </div>
                     <div class="bottom-div">
                         <p>Sick Kids</p>
